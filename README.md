@@ -24,6 +24,8 @@ bin/hdfs dfs -mkdir /inputs
 ```
 bin/hdfs dfs -copyFromLocal /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/data/input1.txt /inputs
 bin/hdfs dfs -copyFromLocal /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/data/input2.txt /inputs
+```
+```
 bin/hdfs dfs -ls /inputs
 ```
 
