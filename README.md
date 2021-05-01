@@ -34,7 +34,7 @@ bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar -file <full pat
 ```
 ##### Example 
 ```
-bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar -file /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/mapper.py -mapper /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/mapper.py -file /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/reducer.py -reducer
+bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar -file /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/mapper.py -mapper /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/mapper.py -file /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/reducer.py -reducer /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/reducer.py -input /inputs -output /outputs
 ```
 ```
 /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/reducer.py -input /inputs -output /outputs
