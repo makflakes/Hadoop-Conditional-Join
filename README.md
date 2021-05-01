@@ -30,11 +30,19 @@ bin/hdfs dfs -ls /inputs
 ### Running the hadoop program
 ##### Normal format
 ```
-bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar -file <full path to mapper code>/mapper.py -mapper <full path to mapper code again>/mapper.py -file <full path to reducer code>/reducer.py -reducer <full path to reducer code again>/reducer.py -input /<path to hdfs input directory> -output /<creating a path for hdfs output directory>
+bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar 
+-file <full path to mapper code>/mapper.py -mapper <full path to mapper code again>/mapper.py 
+-file <full path to reducer code>/reducer.py -reducer <full path to reducer code again>/reducer.py 
+-input /<path to hdfs input directory> 
+-output /<creating a path for hdfs output directory>
 ```
 ##### Example 
 ```
-bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar -file /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/mapper.py -mapper /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/mapper.py -file /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/reducer.py -reducer /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/reducer.py -input /inputs -output /outputs
+bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar 
+-file /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/mapper.py -mapper /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/mapper.py 
+-file /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/reducer.py -reducer /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/reducer.py 
+-input /inputs 
+-output /outputs
 ```
 ```
 /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/reducer.py -input /inputs -output /outputs
