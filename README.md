@@ -36,7 +36,7 @@ bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar
 -input /<path to hdfs input directory> 
 -output /<creating a path for hdfs output directory>
 ```
-##### Example 
+##### Example (one command entirely)
 ```
 bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar 
 -file /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/mapper.py -mapper /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/mapper.py 
