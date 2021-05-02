@@ -49,7 +49,7 @@ Almost_Show,677
 ```
 
 # Requirements 
-This code has been developed and tested on Python3.8 with Hadoop version 2.4.1
+This code has been developed and tested on Python 3.8 with Hadoop(v2.4.1)
 
 # Execution
 
@@ -73,12 +73,13 @@ sbin/start-yarn.sh
  bin/hdfs dfs -copyFromLocal /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/data/input1.txt /inputs
  bin/hdfs dfs -copyFromLocal /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/data/input2.txt /inputs
 ```
+##### Check input directory
 ```
 bin/hdfs dfs -ls /inputs
 ```
 
 ### Running the hadoop program
-##### Normal format
+##### Syntax
 ```
 bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar 
 -file <full path to mapper code>/mapper.py -mapper <full path to mapper code again>/mapper.py 
