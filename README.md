@@ -13,13 +13,13 @@ This code has been developed and tested on Python3.8 with Hadoop version 2.4.1
 
 ### Initialising Hadoop
 ```
- bin/hadoop namenode -format
+bin/hadoop namenode -format
 ```
 ```
- sbin/start-dfs.sh
+sbin/start-dfs.sh
 ```
 ```
- sbin/start-yarn.sh
+sbin/start-yarn.sh
 ```
 
 ### Creating and uploading to input directory
@@ -32,13 +32,13 @@ This code has been developed and tested on Python3.8 with Hadoop version 2.4.1
  bin/hdfs dfs -copyFromLocal /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/data/input2.txt /inputs
 ```
 ```
- bin/hdfs dfs -ls /inputs
+bin/hdfs dfs -ls /inputs
 ```
 
 ### Running the hadoop program
 ##### Normal format
 ```
- bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar 
+bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar 
 -file <full path to mapper code>/mapper.py -mapper <full path to mapper code again>/mapper.py 
 -file <full path to reducer code>/reducer.py -reducer <full path to reducer code again>/reducer.py 
 -input /<path to hdfs input directory> 
@@ -46,7 +46,7 @@ This code has been developed and tested on Python3.8 with Hadoop version 2.4.1
 ```
 ##### Example (one command entirely)
 ```
- bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar 
+bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar 
 -file /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/mapper.py -mapper /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/mapper.py 
 -file /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/reducer.py -reducer /mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/reducer.py 
 -input /inputs 
@@ -55,12 +55,12 @@ This code has been developed and tested on Python3.8 with Hadoop version 2.4.1
 
 ##### Checking the output directory
 ```
- bin/hdfs dfs -ls /outputs
+bin/hdfs dfs -ls /outputs
 ```
 
 ##### Running the output file
 ```
- bin/hdfs dfs -cat /outputs/part-00000
+bin/hdfs dfs -cat /outputs/part-00000
 ```
 
 # Output
