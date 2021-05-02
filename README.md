@@ -16,7 +16,7 @@ This code has been developed and tested on Python3.8 with Hadoop version 2.4.1
  bin/hadoop namenode -format
 ```
 ```
-sbin/start-dfs.sh
+ sbin/start-dfs.sh
 ```
 ```
  sbin/start-yarn.sh
