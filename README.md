@@ -1,10 +1,52 @@
 # Hadoop-Conditional-Join
 
 # Introduction
-What is the total number of viewers for shows on ABC (in data/input1.txt and data/input2.txt)? Write the mapper and reducer program to join two databases based on the mentioned condition.
+This is a Hadoop Project to tally the total number of viewers for shows on ABC channel from data/input1.txt and data/input2.txt
 
 # Objective
 To write a Hadoop mapper and reducer program to join the two datasets based on TV channel and count the views for each show on ABC channel.
+
+# Input Dataset
+### input1.txt (show, channel)
+```
+Hourly_Sports,DEF
+Baked_News,BAT
+PostModern_Talking,XYZ
+Loud_News,CNO
+Almost_Show,ABC
+Hot_Talking,DEF
+Dumb_Show,BAT
+Surreal_Show,XYZ
+Cold_Talking,CNO
+Hourly_Cooking,ABC
+Baked_Cooking,DEF
+PostModern_News,BAT
+.
+.
+.
+```
+
+### input2.txt (show, views)
+```
+Hourly_Sports,21
+PostModern_Show,38
+Surreal_News,73
+Dumb_Cooking,144
+Cold_Talking,287
+Almost_Talking,574
+Loud_News,113
+Hot_Talking,228
+Baked_Games,459
+Hourly_Talking,922
+PostModern_Sports,813
+Surreal_Cooking,596
+Dumb_Games,163
+Cold_Show,334
+Almost_Show,677
+.
+.
+.
+```
 
 # Requirements 
 This code has been developed and tested on Python3.8 with Hadoop version 2.4.1
