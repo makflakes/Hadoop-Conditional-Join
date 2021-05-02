@@ -46,9 +46,7 @@ bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.4.1.jar
 -input /inputs 
 -output /outputs
 ```
-```
-/mnt/d/Users/Desktop/Hadoop_Linux/hadoop-2.4.1/MapReduceTutorial/reducer.py -input /inputs -output /outputs
-```
+
 ##### Checking the output directory
 ```
 bin/hdfs dfs -ls /outputs
