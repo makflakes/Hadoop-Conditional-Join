@@ -13,7 +13,7 @@ This code has been developed and tested on Python3.8 with Hadoop version 2.4.1
 
 ### Initialising Hadoop
 ```
-hadoop$ bin/hadoop namenode -format
+<span style="color:blue">hadoop$</span> bin/hadoop namenode -format
 ```
 ```
 hadoop$ sbin/start-dfs.sh
