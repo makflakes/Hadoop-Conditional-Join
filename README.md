@@ -54,7 +54,7 @@ This code has been developed and tested on Python 3.8 with Hadoop(v2.4.1)
 # Execution
 
 ### Initialising Hadoop
-```
+```shell
 bin/hadoop namenode -format
 ```
 ```
